@@ -12,7 +12,7 @@ void GenerateGameSpace(string MapNumbers);
 
 
 
-int main void(){
+int main(){
 
 //creates class goblin speed is fast when compared to all the other classes 
 class Goblins
