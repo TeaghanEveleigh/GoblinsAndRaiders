@@ -2,6 +2,17 @@
 using namespace std;
 #define mapsize 10;
 
+struct Character
+{
+    string Name;
+    float Health;
+    int Level;
+    float Damage;
+    void Attack()
+    {
+        cout<<Name<<"does"<<Damage<<"damage!"<<endl;
+    }
+}
 
 
 
@@ -47,16 +58,19 @@ enum {
     system("pause");
 }
 
-void GenerateGameSpace(string MapNumbers,MapSize){
+void GenerateGameSpace(string MapNumbers[mapsize][mapsize],MapSize){
+ 
     for(int i=0,i<mapsize,i++)
     {
         for(int k=0,k<mapsize,k++)
-            if(MapNubers==49)
+        {
+
+            if(MapNumbers[i][k]==49)
             {
 
             }
 
-            else if() 
+            else if(MapNumbers[i][k]==48) 
             {
 
             }
@@ -66,7 +80,7 @@ void GenerateGameSpace(string MapNumbers,MapSize){
 
             }
 
-            }
+        }
     }
 
 
